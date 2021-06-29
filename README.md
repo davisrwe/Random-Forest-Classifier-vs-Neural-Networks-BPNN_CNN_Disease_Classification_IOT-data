@@ -13,16 +13,15 @@ Big data Analytics Capstone Project - Comparative Study of Machine Learning Tech
 #In order to verify the effectiveness of the proposed method, the different performance measures are analyzed and compared with existing methods.
 
 #Existing methods
-# -convolutional neural networks
-# -neural networks
-# -backward propogation networks
+# convolutional neural networks
+# neural networks
+# backward propogation networks
 
 #Proposed method
-# -random forest classifier (RFC) + IDA
+# random forest classifier (RFC) + IDA
 
 #Expected results:
-# -The proposed method (RFC + IDA) provides classification accuracy better than the Gaussian mixture model and logistic regression (i.e. BNN, NN, CNN). 
-#  Both training and testing process get the maximum performance rate that is 94.2% precision,89.99% recall in the proposed model.
+# The proposed method (RFC + IDA) provides classification accuracy better than the Gaussian mixture model and logistic regression (i.e. BNN, NN, CNN). Both training and testing process get the maximum performance rate that is 94.2% precision,89.99% recall in the proposed model.
 
 
 #instruction
