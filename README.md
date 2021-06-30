@@ -26,7 +26,7 @@ Expected results:
 
 
 Instruction
-#before running this code, 
-#please ensure you have create a project folder for this capstone and have this script saved in there
+#before running any of the code, 
+#please ensure you have created a project folder for this capstone and have this script saved in there (or cloned in there via R or other software)
 #please follow the link below and unzip the file in a location (i.e. the project's folder where this script) is located 
 #link -> https://archive.ics.uci.edu/ml/machine-learning-databases/00336/Chronic_Kidney_Disease.rar
