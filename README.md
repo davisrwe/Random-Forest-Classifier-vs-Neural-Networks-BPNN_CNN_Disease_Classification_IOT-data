@@ -16,7 +16,7 @@ Introduction
 Existing methods
 #-convolutional neural networks
 #-neural networks
-#-backward propogation networks
+#-backward propogation neural networks
 
 Proposed method
 #-random forest classifier (RFC) + IDA
