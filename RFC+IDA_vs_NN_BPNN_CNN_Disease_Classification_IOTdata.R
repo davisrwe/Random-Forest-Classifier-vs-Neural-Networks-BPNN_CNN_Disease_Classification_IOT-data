@@ -70,5 +70,7 @@ lungcancer_df = data.frame(
 kidneydiseasse_df = data.frame(
   read.arff("chronic_kidney_disease.arff"))
 
+print("test")
+
 
 
