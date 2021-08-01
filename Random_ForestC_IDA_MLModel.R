@@ -1,4 +1,4 @@
-#import packages
+#import packages for reading files
 install.packages("RWeka")
 library("RWeka")
 
@@ -42,6 +42,11 @@ kidneydiseasse_df = data.frame(
   read.arff("chronic_kidney_disease.arff"))
 
 #Random Forest Classifier Machine Learning Algorithm
+
+#import packages for RFC modelling
+
+install.packages(randomForest)
+install.packaged(csTools)
 
 library(randomForest)
 require(caTools)
