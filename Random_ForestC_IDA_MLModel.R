@@ -43,13 +43,40 @@ kidneydiseasse_df = data.frame(
 
 #Random Forest Classifier Machine Learning Algorithm
 
-#import packages for RFC modelling
-
-install.packages(randomForest)
-install.packaged(csTools)
-
+install.packages("randomForest")
+install.packages("caTools")
 library(randomForest)
-require(caTools)
+library(caTools)
 
+#Data cleaning :Change 2,3,4 in num column to 1
+heartdisease_df_cleveland$`num the predicted attribute`[heartdisease_df_cleveland$`num the predicted attribute`>1]=1
+
+#Data cleaning : Transform method to change the in built type of each feature.
+summary(heartdisease_df_cleveland)
+sapply(heartdisease_df_cleveland,class)
+
+heartdisease_df_cleveland = transform(
+  heartdisease_df_cleveland,
+  age=as.integer(age),
+  sex=as.factor(sex),
+  cp=as.factor(cp),
+  trestbps=as.integer(trestbps),
+  chol=as.integer(chol),
+  fbs=as.factor(fbs),
+  restecg=as.factor(restecg),
+  thalach=as.integer(thalach),
+  exang=as.factor(exang),
+  oldpeak=as.numeric(oldpeak),
+  slope=as.factor(slope),
+  ca=as.factor(ca),
+  thal=as.factor(thal),
+  `num the predicted attribute`=as.factor(`num the predicted attribute`)
+)
+
+summary(heartdisease_df_cleveland)
+sapply(heartdisease_df_cleveland,class)
+
+heartdisease_df_cleveland[ heartdisease_df_cleveland == "?"] = NA
+colSums(is.na(heartdisease_df_cleveland))
 
 
